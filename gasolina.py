@@ -7,4 +7,7 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 grafico = sns.lineplot(data=gasolina_df, x='dia', y='venda', palette='pastel')
+plt.title("Gráfico Preço/Dia da gasolina")
+plt.xlabel("Dia")
+plt.ylabel("Preço")
 plt.savefig('gasolina.png')
